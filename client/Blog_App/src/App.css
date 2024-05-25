@@ -1,0 +1,197 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  color: #212121;
+}
+main{
+  padding: 10px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+img{
+  max-width: 100%;
+
+}
+a{
+  cursor: pointer;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+header a{
+  text-decoration: none;
+  color: inherit;
+}
+
+div.post-btn a{
+  background-color: #a7efff;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+div.post-btn a:hover{
+  background-color: #6ae2fd;
+}
+
+header a.logo{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+header nav{
+  display: flex;
+  gap: 15px;
+}
+div.post{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  div.post {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}
+
+div.post-content h2{
+  margin: 0px;
+  font-size: 1.8rem;
+}
+
+div.post-content a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-info{
+  margin: 6px 0px;
+  color: #888;
+  display: flex;
+  gap: 10px;
+  font-size: 0.7rem;
+}
+
+.post-info a{
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.post-summary {
+  margin: 10px 0px;
+  line-height: 1.4rem;
+}
+
+form.login, form.register{
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input{
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 8px 8px;
+  width: 100%;
+  border: 1px solid #ddd;
+  background-color: rgb(243, 249, 254);
+}
+
+button{
+  width: 100%;
+  padding: 8px 0px;
+  display: block;
+  background-color: #414141;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #2c2b2b;
+  cursor: pointer;
+}
+
+form.login h1, form.register h1{
+  text-align: center;
+}
+
+div.post-page .image{
+  max-height: 300px;
+  display: flex;
+  overflow: hidden;
+}
+
+div.post-page div.image img{
+  object-fit: contain;
+  object-position: center center;
+  margin-top: 10px;
+}
+
+div.post-page a{
+  color: #212121;
+  text-decoration: underline;
+}
+
+div.post-page h1{
+  text-align: center;
+}
+
+div.post-page time{
+  text-align: center;
+  display: block;
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+div.post-page .author{
+  text-align: center;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+div.post-page .edit-row{
+  text-align: center;
+
+}
+
+div.post-page .edit-btn{
+  background-color: #212121;
+  color: #ddd;
+  padding: 15px 30px;
+  display: inline-flex;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  align-items: center;
+  gap: 5px;
+}
+
+a svg{
+  height: 20px;
+}
+div.post-page .edit-btn:hover{
+  background-color: #464545;
+}
+
+div.post div.image{
+  display: flex;
+  overflow: hidden;
+  max-height: 300px;
+}
+
+div.post div.image img{
+  
+  object-fit: contain;
+  object-position: center center;
+}
